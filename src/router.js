@@ -9,7 +9,7 @@ const _routes = {
     "/contact": "contact"
 };
 const _pages = document.querySelectorAll(".page");
-const _navLinks = document.querySelectorAll("nav a");
+const _navLinks = document.querySelectorAll(".nav-link");
 
 /**
  * Changing display to none for all pages
@@ -54,8 +54,7 @@ function setActiveTab(pathname) {
  * Attaching event to nav links and preventing default anchor link event
  */
 function attachNavLinkEvents() {
-    const navLinks = document.querySelectorAll(".nav-link");
-    for (const link of navLinks) {
+    for (const link of _navLinks) {
         link.addEventListener("click", function (event) {
             const path = link.getAttribute("href");
             navigateTo(path);
