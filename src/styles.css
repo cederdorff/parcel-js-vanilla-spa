@@ -25,6 +25,10 @@ h1 {
   letter-spacing: 0.1em;
 }
 
+a {
+  color: var(--green);
+}
+
 /* ---------- tabbar styling ---------- */
 .tabbar {
   background-color: var(--green);
